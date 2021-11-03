@@ -84,19 +84,6 @@ const questions = [{
 },
 {
     type: 'input',
-    name: 'license',
-    message: 'What are your license`s?',
-    validate: lisenceInput => {
-        if (lisenceInput) {
-            return true
-        } else {
-            console.log("Please enter your license");
-            return false
-        }
-    }
-},
-{
-    type: 'input',
     name: 'github',
     message: 'What is your GitHub Username?',
     validate: githubInput => {
@@ -117,6 +104,34 @@ const questions = [{
             return true
         } else {
             console.log("Please enter your email address");
+            return false
+        }
+    }
+},
+{
+    type: 'checkbox',
+    name: 'languages',
+    message: 'What did you build this project with? (Check all that apply)?',
+    choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Node', 'React'],
+    validate: languageInput => {
+        if (languageInput) {
+            return true
+        } else {
+            console.log("What did you build this project with? (Check all that apply)");
+            return false
+        }
+    }
+},
+{
+    type: 'checkbox',
+    name: 'licenses',
+    message: 'What did you build this project with? (Check all that apply)?',
+    choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3'],
+    validate: licenseInput => {
+        if (licenseInput) {
+            return true
+        } else {
+            console.log("What license`s would you like? (Check all that apply)");
             return false
         }
     }
@@ -152,6 +167,7 @@ init();
 
 promtQuestions()
 .then(questionData => {
+    console.log(questionData)
     return generatePage(questionData)
 })
 .then(pageMD => {
