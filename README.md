@@ -20,7 +20,7 @@ Clone the repo. Install Dependencies (Inquirer, Node). Open terminal. Run "node 
 ## Usage
 Run "node index" in the terminal and follow the prompts provided to create your own professional README file. 
 [GitHub Link](https://github.com/Blitman12/readme-generator)
-![Screenshot](/Capture.jpg)
+![Screenshot](./Capture.jpg)
 
 ## Contributions
 Potential to add dynamically created badges or add additonal badges to the prompts/badge creation function.
