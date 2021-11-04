@@ -29,7 +29,7 @@ Potential to add dynamically created badges or add additonal badges to the promp
 This project is covered under the License/License's: MIT.
 
 ## Questions
-Please visit my [GitHub profile](https://github.com/blitman12) for other cool projects
+Please visit my [GitHub profile](https://github.com/blitman12) for other cool projects.
 If you have any remaining questions please feel free to reach me at bradlitman94@gmail.com
 
 ## Tests
